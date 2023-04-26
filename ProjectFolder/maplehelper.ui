@@ -17,10 +17,10 @@
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>217</width>
-      <height>598</height>
+      <x>16</x>
+      <y>0</y>
+      <width>231</width>
+      <height>604</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -73,35 +73,28 @@
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
-      <widget class="QCheckBox" name="vellumBox">
-       <property name="text">
-        <string>Chaos Vellum</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="0">
+     <item row="10" column="0">
       <widget class="QCheckBox" name="pinkbeanBox">
        <property name="text">
         <string>Chaos Pink Bean</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
+     <item row="11" column="0">
       <widget class="QCheckBox" name="cygnusBox">
        <property name="text">
         <string>Cygnus</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="0">
+     <item row="12" column="0">
       <widget class="QCheckBox" name="lotusBox">
        <property name="text">
         <string>Lotus</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="1">
+     <item row="12" column="1">
       <widget class="QComboBox" name="lotusDifficultyBox">
        <property name="editable">
         <bool>false</bool>
@@ -118,14 +111,14 @@
        </item>
       </widget>
      </item>
-     <item row="12" column="0">
+     <item row="13" column="0">
       <widget class="QCheckBox" name="damienBox">
        <property name="text">
         <string>Damien</string>
        </property>
       </widget>
      </item>
-     <item row="12" column="1">
+     <item row="13" column="1">
       <widget class="QComboBox" name="damienDifficultyBox">
        <item>
         <property name="text">
@@ -139,14 +132,14 @@
        </item>
       </widget>
      </item>
-     <item row="13" column="0">
+     <item row="14" column="0">
       <widget class="QCheckBox" name="slimeBox">
        <property name="text">
         <string>Guardian Angel Slime</string>
        </property>
       </widget>
      </item>
-     <item row="13" column="1">
+     <item row="14" column="1">
       <widget class="QComboBox" name="slimeDifficultyBox">
        <item>
         <property name="text">
@@ -160,14 +153,14 @@
        </item>
       </widget>
      </item>
-     <item row="14" column="0">
+     <item row="15" column="0">
       <widget class="QCheckBox" name="lucidBox">
        <property name="text">
         <string>Lucid</string>
        </property>
       </widget>
      </item>
-     <item row="14" column="1">
+     <item row="15" column="1">
       <widget class="QComboBox" name="lucidDifficultyBox">
        <item>
         <property name="text">
@@ -186,14 +179,14 @@
        </item>
       </widget>
      </item>
-     <item row="16" column="0">
+     <item row="17" column="0">
       <widget class="QCheckBox" name="willBox">
        <property name="text">
         <string>Will</string>
        </property>
       </widget>
      </item>
-     <item row="16" column="1">
+     <item row="17" column="1">
       <widget class="QComboBox" name="willDifficultyBox">
        <item>
         <property name="text">
@@ -212,14 +205,14 @@
        </item>
       </widget>
      </item>
-     <item row="17" column="0">
+     <item row="18" column="0">
       <widget class="QCheckBox" name="gloomBox">
        <property name="text">
         <string>Gloom</string>
        </property>
       </widget>
      </item>
-     <item row="17" column="1">
+     <item row="18" column="1">
       <widget class="QComboBox" name="gloomDifficultyBox">
        <item>
         <property name="text">
@@ -233,14 +226,14 @@
        </item>
       </widget>
      </item>
-     <item row="18" column="0">
+     <item row="19" column="0">
       <widget class="QCheckBox" name="vhillaBox">
        <property name="text">
         <string>Verus Hilla</string>
        </property>
       </widget>
      </item>
-     <item row="18" column="1">
+     <item row="19" column="1">
       <widget class="QComboBox" name="vhillaDifficultyBox">
        <item>
         <property name="text">
@@ -254,14 +247,14 @@
        </item>
       </widget>
      </item>
-     <item row="19" column="0">
+     <item row="20" column="0">
       <widget class="QCheckBox" name="darknellBox">
        <property name="text">
         <string>Darknell</string>
        </property>
       </widget>
      </item>
-     <item row="19" column="1">
+     <item row="20" column="1">
       <widget class="QComboBox" name="darknellDifficultyBox">
        <item>
         <property name="text">
@@ -275,14 +268,14 @@
        </item>
       </widget>
      </item>
-     <item row="20" column="0">
+     <item row="21" column="0">
       <widget class="QCheckBox" name="serenBox">
        <property name="text">
         <string>Seren</string>
        </property>
       </widget>
      </item>
-     <item row="20" column="1">
+     <item row="21" column="1">
       <widget class="QComboBox" name="serenDifficultyBox">
        <item>
         <property name="text">
@@ -296,24 +289,31 @@
        </item>
       </widget>
      </item>
-     <item row="21" column="0">
+     <item row="22" column="0">
       <widget class="QCheckBox" name="kalosBox">
        <property name="text">
         <string>Kalos</string>
        </property>
       </widget>
      </item>
-     <item row="22" column="0">
+     <item row="23" column="0">
       <widget class="QCheckBox" name="pnoBox">
        <property name="text">
         <string>Princess No</string>
        </property>
       </widget>
      </item>
-     <item row="23" column="0">
+     <item row="24" column="0">
       <widget class="QCheckBox" name="akechiBox">
        <property name="text">
         <string>Akechi </string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QCheckBox" name="vellumBox">
+       <property name="text">
+        <string>Chaos Vellum</string>
        </property>
       </widget>
      </item>
@@ -322,9 +322,9 @@
    <widget class="QLineEdit" name="mesoDisplay">
     <property name="geometry">
      <rect>
-      <x>980</x>
+      <x>700</x>
       <y>40</y>
-      <width>281</width>
+      <width>561</width>
       <height>41</height>
      </rect>
     </property>
@@ -339,6 +339,9 @@
     </property>
     <property name="text">
      <string>0</string>
+    </property>
+    <property name="maxLength">
+     <number>32767</number>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
