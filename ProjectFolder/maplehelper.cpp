@@ -9,9 +9,6 @@ MapleHelper::MapleHelper(QWidget *parent)
 {
     ui->setupUi(this);
     ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
-    QCheckBox *zakumBox = ui->zakumBox;
-    zakumBox->setChecked(false);
-    //connect(zakumBox,SIGNAL(Ui::zakumBox->isChecked()),this,SLOT(zakumChecked()));
 }
 
 MapleHelper::~MapleHelper()
@@ -175,8 +172,6 @@ void MapleHelper::on_lotusBox_stateChanged(int arg1)
     }
 }
 
-
-
 void MapleHelper::on_lotusDifficultyBox_textActivated(const QString &arg1)
 {
     if(ui->lotusBox->isChecked()){
@@ -208,6 +203,208 @@ void MapleHelper::on_damienBox_stateChanged(int arg1)
     }
     else if(!ui->damienBox->isChecked() && ui->damienDifficultyBox->currentText() == "Hard"){
         mesos -= 351562500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_slimeBox_stateChanged(int arg1)
+{
+    if(ui->slimeBox->isChecked() && ui->slimeDifficultyBox->currentText() == "Normal"){
+        mesos += 171610000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->slimeBox->isChecked() && ui->slimeDifficultyBox->currentText() == "Chaos"){
+        mesos += 451562500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->slimeBox->isChecked() && ui->slimeDifficultyBox->currentText() == "Normal"){
+        mesos -= 171610000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->slimeBox->isChecked() && ui->slimeDifficultyBox->currentText() == "Chaos"){
+        mesos -= 451562500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_lucidBox_stateChanged(int arg1)
+{
+    if(ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Easy"){
+        mesos += 175562500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    if(ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Normal"){
+        mesos += 203062500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Hard"){
+        mesos += 400000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Easy"){
+        mesos -= 175562500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Normal"){
+        mesos -= 203062500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->lucidBox->isChecked() && ui->lucidDifficultyBox->currentText() == "Hard"){
+        mesos -= 400000000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_willBox_stateChanged(int arg1)
+{
+    if(ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Easy"){
+        mesos += 191275000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    if(ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Normal"){
+        mesos += 232562500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Hard"){
+        mesos += 441000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Easy"){
+        mesos -= 191275000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Normal"){
+        mesos -= 232562500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->willBox->isChecked() && ui->willDifficultyBox->currentText() == "Hard"){
+        mesos -= 441000000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_gloomBox_stateChanged(int arg1)
+{
+    if(ui->gloomBox->isChecked() && ui->gloomDifficultyBox->currentText() == "Normal"){
+        mesos += 248062500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->gloomBox->isChecked() && ui->gloomDifficultyBox->currentText() == "Chaos"){
+        mesos += 462250000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->gloomBox->isChecked() && ui->gloomDifficultyBox->currentText() == "Normal"){
+        mesos -= 248062500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->gloomBox->isChecked() && ui->gloomDifficultyBox->currentText() == "Chaos"){
+        mesos -= 462250000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_vhillaBox_stateChanged(int arg1)
+{
+    if(ui->vhillaBox->isChecked() && ui->vhillaDifficultyBox->currentText() == "Normal"){
+        mesos += 447600000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->vhillaBox->isChecked() && ui->vhillaDifficultyBox->currentText() == "Hard"){
+        mesos += 552250000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->vhillaBox->isChecked() && ui->vhillaDifficultyBox->currentText() == "Normal"){
+        mesos -= 447600000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->vhillaBox->isChecked() && ui->vhillaDifficultyBox->currentText() == "Hard"){
+        mesos -= 552250000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_darknellBox_stateChanged(int arg1)
+{
+    if(ui->darknellBox->isChecked() && ui->darknellDifficultyBox->currentText() == "Normal"){
+        mesos += 264062500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->darknellBox->isChecked() && ui->darknellDifficultyBox->currentText() == "Hard"){
+        mesos += 484000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->darknellBox->isChecked() && ui->darknellDifficultyBox->currentText() == "Normal"){
+        mesos -= 264062500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->darknellBox->isChecked() && ui->darknellDifficultyBox->currentText() == "Hard"){
+        mesos -= 484000000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_serenBox_stateChanged(int arg1)
+{
+    if(ui->serenBox->isChecked() && ui->serenDifficultyBox->currentText() == "Normal"){
+        mesos += 668437500; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(ui->serenBox->isChecked() && ui->serenDifficultyBox->currentText() == "Hard"){
+        mesos += 756250000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->serenBox->isChecked() && ui->serenDifficultyBox->currentText() == "Normal"){
+        mesos -= 668437500;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->serenBox->isChecked() && ui->serenDifficultyBox->currentText() == "Hard"){
+        mesos -= 756250000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_kalosBox_stateChanged(int arg1)
+{
+    if(ui->kalosBox->isChecked()){
+        mesos += 1000000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->kalosBox->isChecked()){
+        mesos -= 1000000000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_pnoBox_stateChanged(int arg1)
+{
+    if(ui->pnoBox->isChecked()){
+        mesos += 81000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->pnoBox->isChecked()){
+        mesos -= 81000000;
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+}
+
+
+void MapleHelper::on_akechiBox_stateChanged(int arg1)
+{
+    if(ui->akechiBox->isChecked()){
+        mesos += 144000000; //Value of the boss
+        ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
+    }
+    else if(!ui->akechiBox->isChecked()){
+        mesos -= 144000000;
         ui->mesoDisplay->setText(QString::number(mesos, 'f', 0));
     }
 }

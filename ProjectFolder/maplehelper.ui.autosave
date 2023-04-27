@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapleHelper</class>
+ <widget class="QMainWindow" name="MapleHelper">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1378</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MapleHelper</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>231</width>
+      <height>604</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="zakumBox">
+       <property name="text">
+        <string>Chaos Zakum</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="magnusBox">
+       <property name="text">
+        <string>Hard Magnus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="hillaBox">
+       <property name="text">
+        <string>Hard Hilla</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="papalatusBox">
+       <property name="text">
+        <string>Chaos Papalatus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QCheckBox" name="pierreBox">
+       <property name="text">
+        <string>Chaos Pierre</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QCheckBox" name="queenBox">
+       <property name="text">
+        <string>Chaos Queen</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QCheckBox" name="vonbonBox">
+       <property name="text">
+        <string>Chaos Von Bon</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QCheckBox" name="pinkbeanBox">
+       <property name="text">
+        <string>Chaos Pink Bean</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QCheckBox" name="cygnusBox">
+       <property name="text">
+        <string>Cygnus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QCheckBox" name="lotusBox">
+       <property name="text">
+        <string>Lotus</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QComboBox" name="lotusDifficultyBox">
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QCheckBox" name="damienBox">
+       <property name="text">
+        <string>Damien</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QComboBox" name="damienDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QCheckBox" name="slimeBox">
+       <property name="text">
+        <string>Guardian Angel Slime</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QComboBox" name="slimeDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chaos</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QCheckBox" name="lucidBox">
+       <property name="text">
+        <string>Lucid</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QComboBox" name="lucidDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Easy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QCheckBox" name="willBox">
+       <property name="text">
+        <string>Will</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="QComboBox" name="willDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Easy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="18" column="0">
+      <widget class="QCheckBox" name="gloomBox">
+       <property name="text">
+        <string>Gloom</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <widget class="QComboBox" name="gloomDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chaos</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QCheckBox" name="vhillaBox">
+       <property name="text">
+        <string>Verus Hilla</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="1">
+      <widget class="QComboBox" name="vhillaDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="QCheckBox" name="darknellBox">
+       <property name="text">
+        <string>Darknell</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="1">
+      <widget class="QComboBox" name="darknellDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="21" column="0">
+      <widget class="QCheckBox" name="serenBox">
+       <property name="text">
+        <string>Seren</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="1">
+      <widget class="QComboBox" name="serenDifficultyBox">
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="22" column="0">
+      <widget class="QCheckBox" name="kalosBox">
+       <property name="text">
+        <string>Kalos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="0">
+      <widget class="QCheckBox" name="pnoBox">
+       <property name="text">
+        <string>Princess No</string>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="0">
+      <widget class="QCheckBox" name="akechiBox">
+       <property name="text">
+        <string>Akechi </string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QCheckBox" name="vellumBox">
+       <property name="text">
+        <string>Chaos Vellum</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="mesoDisplay">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>561</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="maxLength">
+     <number>32767</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1378</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
