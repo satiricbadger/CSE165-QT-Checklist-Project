@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/BossIcons">
+        <file>Icons/lucid.png</file>
+        <file>Icons/zakum.webp</file>
+        <file>Icons/akechi.webp</file>
+        <file>Icons/arkarium.webp</file>
+        <file>Icons/cqueen.webp</file>
+        <file>Icons/cygnus.webp</file>
+        <file>Icons/damien.webp</file>
+        <file>Icons/darknell.webp</file>
+        <file>Icons/gloom.webp</file>
+        <file>Icons/hilla.webp</file>
+        <file>Icons/hseren.webp</file>
+        <file>Icons/kalos.webp</file>
+        <file>Icons/lotus.webp</file>
+        <file>Icons/magnus.webp</file>
+        <file>Icons/papalatus.webp</file>
+        <file>Icons/pierre.webp</file>
+        <file>Icons/pinkbean.webp</file>
+        <file>Icons/Ranmaru.webp</file>
+        <file>Icons/pno.webp</file>
+        <file>Icons/ursus.webp</file>
+        <file>Icons/vellum.webp</file>
+        <file>Icons/vhilla.webp</file>
+        <file>Icons/vonbon.webp</file>
+        <file>Icons/will.webp</file>
+        <file>Icons/vonleon.webp</file>
+        <file>Icons/slime.webp</file>
+        <file>Icons/meso.webp</file>
+        <file>Icons/gollux.webp</file>
+    </qresource>
+    <qresource prefix="/SymbolsIcon">
+        <file>Icons/arcana.webp</file>
+        <file>Icons/chuchu.webp</file>
+        <file>Icons/esfera.webp</file>
+        <file>Icons/lach.webp</file>
+        <file>Icons/morass.webp</file>
+        <file>Icons/spark.webp</file>
+        <file>Icons/vanishing.webp</file>
+        <file>Icons/arcus.webp</file>
+        <file>Icons/cernium.webp</file>
+        <file>Icons/odium.webp</file>
+    </qresource>
+</RCC>
