@@ -353,22 +353,6 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QFrame" name="Chart">
-    <property name="geometry">
-     <rect>
-      <x>810</x>
-      <y>90</y>
-      <width>381</width>
-      <height>421</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
    <widget class="QWidget" name="formLayoutWidget_2">
     <property name="geometry">
      <rect>
@@ -561,6 +545,17 @@
     <property name="text">
      <string>Sacred Symbol Dailies</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>120</y>
+      <width>621</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

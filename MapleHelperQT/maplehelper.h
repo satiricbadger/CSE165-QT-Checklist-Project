@@ -3,7 +3,12 @@
 #define MAPLEHELPER_H
 
 #include <QMainWindow>
-
+#include <QtCharts/QBarCategoryAxis>
+#include <QtCharts/QValueAxis>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QChart>
+#include <QtCharts/QChartView>
 
 
 QT_BEGIN_NAMESPACE
@@ -21,6 +26,17 @@ public:
 
 private:
     Ui::MapleHelper *ui;
+    int prevLucidDifficulty;
+    int prevWillDifficulty;
+    void updateChart();
+    QBarSet *weeklyMesoSet =new QBarSet("Weekly Mesos");
+    QBarSet *dailyMesoSet =new QBarSet("Daily Mesos");
+    QBarSeries *series = new QBarSeries();
+    QChart *chart = new QChart();
+    QStringList categories;
+    QBarCategoryAxis *axisX = new QBarCategoryAxis();
+    QValueAxis *axisY = new QValueAxis();
+    QChartView *chartView = new QChartView(chart);
 
 
 private slots:
@@ -54,6 +70,15 @@ private slots:
     void on_mesoDisplay_textChanged(const QString &arg1);
     void on_ursusBox_stateChanged(int arg1);
     void on_vonleonBox_stateChanged(int arg1);
+    void on_lotusDifficultyBox_currentIndexChanged(int index);
+    void on_damienDifficultyBox_currentIndexChanged(int index);
+    void on_slimeDifficultyBox_currentIndexChanged(int index);
+    void on_lucidDifficultyBox_currentIndexChanged(int index);
+    void on_willDifficultyBox_currentIndexChanged(int index);
+    void on_gloomDifficultyBox_currentIndexChanged(int index);
+    void on_vhillaDifficultyBox_currentIndexChanged(int index);
+    void on_darknellDifficultyBox_currentIndexChanged(int index);
+    void on_serenDifficultyBox_currentIndexChanged(int index);
 };
 
 #endif // MAPLEHELPER_H
